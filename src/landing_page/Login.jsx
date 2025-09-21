@@ -42,7 +42,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         const userString = encodeURIComponent(JSON.stringify(data.user));
-        window.location.href = `http://localhost:5174?user=${userString}`;
+        window.location.href = `https://dashboardzerodha-1.onrender.com?user=${userString}`;
       } else {
         handleError(message);
       }
